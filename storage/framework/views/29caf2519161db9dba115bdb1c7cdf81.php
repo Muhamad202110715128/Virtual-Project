@@ -1,0 +1,1 @@
+components.buttons<?php /**PATH C:\xampp\htdocs\VI\storage\framework\views/daf16d905b41a4a2983f38b6d9c41895.blade.php ENDPATH**/ ?>
