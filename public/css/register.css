@@ -1,0 +1,448 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row{
+  height: 800px;
+  width: auto;
+  background: #F0F5FF;
+  border-radius: 20px;
+}
+
+.right{
+  height: auto;
+  background: #F0F5FF;
+  border: 20px;
+}
+
+.side-image{
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.side-image .cover{
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  top: 250px;
+}
+
+.side-image img{
+  margin: 20px 85px;
+}
+
+.group-child {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+}
+.group-item {
+  position: absolute;
+  top: 140px;
+  left: 174px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 400px;
+  left: -145px;
+  width: 374px;
+  height: 377px;
+  z-index: 1;
+}
+.steper{
+  display: flex;
+  justify-content: center;
+}
+
+.progress_header{
+  width: 200px;
+  height: 20px;
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  border-radius: 10px;
+  background:  
+      linear-gradient(blue , blue) 0 9px/0% 4px no-repeat,
+      linear-gradient(#0057FF,#0057FF) 0 9px/100% 4px no-repeat;
+      transition: background-size 0.5s ease;
+}
+
+.progress_header p{
+  position: relative;
+  margin: 0;
+}
+
+.progress_header p .step{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #0057FF;
+  transition:  
+      background 0.3s ease 0.3s,
+      color 0.15s ease 0.2s;
+}
+
+.progress_header .completed .step{
+  background-color: #0057FF;
+  color: #eee;
+}
+
+.form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer form{
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page{
+  width: 25%;
+  margin: 0;
+}
+
+.form-outer form .page .page-title .teks-blue{
+  color: #0057FF;
+}
+
+.form-outer form .page .undangan-type{
+  width: auto;
+  height: 150px;
+
+}
+
+.form-outer form .page .undangan-type .type{
+  width: 520px;
+  height: 260px;
+}
+
+.form-outer form .page .undangan-type .type .card-undangan{
+  border-radius: 10px;
+  background:linear-gradient(to right, #2871FF 55% , #fff);
+  color: #fff;
+}
+
+.form-outer form .page .undangan-type .type .card-undangan .card-body .card-title{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.form-outer form .page .undangan-type .type .card-undangan img{
+  background: #fff;
+  width: 130px;
+}
+
+.form-outer form .page .bill{
+  display: flex;
+  justify-content: center;
+}
+
+.form-outer form .page .bill{
+  margin-top: 80px;
+}
+
+.form-outer form .page .bill .card{
+  width: 500px;
+}
+
+.form-outer form .page .bill .card .card-body .card-title img{
+  width: 150px;
+  margin: 20px 0;
+}
+
+.form-outer form .page .bill .card .card-body .card-subtitle{
+  border-bottom: solid #000;
+}
+
+.form-outer form .page .bill .card .card-body .card-pembayaran {
+  margin: 20px 0;
+}
+
+.form-outer form .page .bill .card .card-body .card-pembayaran .check{
+  margin: 5px 2px;
+  background: #009883;
+  border-radius: 50%;
+}
+
+.form-outer form .page .card .card-pembayaran .salin {
+  border: none;
+  background: none;
+}
+
+.form-outer form .page .bill .card .card-body .detail-pembelian{
+  padding: 30px 0;
+  border-top:solid #000;
+  border-bottom:solid #000;
+}
+
+.form-outer form .page .bill .card .card-body .pembelian p{
+  margin: 0;
+
+}
+
+.form-outer form .page .bill .card .card-body .rincian{
+  border-bottom: solid #000;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+
+.input-field label{
+margin: 0 20;
+}
+
+.input-field input{
+margin: 20px 0 20px 0;
+padding-left: 15px;
+width: 100%;
+position: relative;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 10px;
+background-color: #fff;
+height: 60px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+text-align: left;
+font-size: 16px;
+color: #575757;
+font-family: Poppins;
+}
+
+.input-box header{
+  margin-top: 50px;
+  font-weight: 700;
+  text-align: start;
+  color: #0057FF;
+}
+
+.input-box .title .content-title p{
+  margin: 0 0 3px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.input-box .title .content-title{
+  background: #0057FF;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+
+.form-outer form .page .otp-field{
+  position: relative;
+  width: 100%;
+  height: 77px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0 50px 0;
+  gap: 25px;
+}
+
+.form-outer form .page .otp-field input{
+  width: 75px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #0057ff;
+  box-sizing: border-box;
+  height: 77px;
+  text-align: center;
+}
+
+.form-outer form .page .timer p{
+  color: red;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.form-outer form .page .re-mesage a{
+  text-decoration: none;
+}
+
+.form-outer form .page .metode .card{
+  margin: 10px 0;
+}
+
+.form-outer form .page .metode .card .card-pay input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 8px 8px 0 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  border: solid #575757;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.form-outer form .page .metode .card .card-pay input[type="checkbox"]:after{
+  font-family: "Font Awesome 6 Free";
+  content: "\f111";
+  margin-bottom: 5px;
+  margin-right: 1px;
+  font-weight: 900;
+  font-size: 10px;
+  color: #0057FF;
+  display: none;
+}
+.form-outer form .page .metode .card .card-pay input[type="checkbox"]:hover{
+  background-color: #0057FF;
+}
+.form-outer form .page .metode .card .card-pay input[type="checkbox"]:checked{
+  background-color: #fff;
+}
+.form-outer form .page .metode .card .card-pay input[type="checkbox"]:checked:after{
+  display: block;
+}
+
+.form-outer form .page .paket{
+  display: flex;
+  justify-content: center;
+}
+
+.form-outer form .page .paket .card{
+  width: 250px;
+  border-radius: 10%;
+  margin:  20px 5px 20px 0;
+}
+
+.form-outer form .page .paket .card-title-ruby,
+.form-outer form .page .paket .card-title-diamond,
+.form-outer form .page .paket .card-title-gold{
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.form-outer form .page .paket .card-title-ruby{
+  color: #DA0041;
+  background-color: #FF9DBA;
+}
+
+.form-outer form .page .paket .card-title-diamond{
+  color: #6500E4;
+  background-color: #C394FF;
+}
+.form-outer form .page .paket .card-title-gold{
+  color: #E4B200;
+  background-color: #FFEFB6;
+}
+
+.form-outer form .page .paket .card .harga p{
+  margin-bottom: 0;
+}
+
+.form-outer form .page .paket .card .harga .awal{
+  color: red;
+  font-size: 10px;
+  text-decoration:line-through;
+}
+
+.form-outer form .page .paket .card .benefit-pack{
+  margin: 40px 0 20px 0;
+}
+
+.form-outer form .page .paket .card a{
+  margin: 10px 10px 20px 10px;
+  border-radius: 16px;
+  width: 180px;
+  height: 46px;
+}
+
+.form-outer form .page .pembayaran{
+  visibility: hidden;
+}
+.input-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit{
+  margin: 50px;
+  width: 50%;
+  border-radius: 16px;
+  background-color: #0057ff;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  color: #f0f5ff;
+  text-decoration: none;
+}
+
+/* .input-submit .submit a{
+  color: #fff;
+  text-decoration: none;
+} */
+
+.submit:hover{
+    background: rgba(37, 95, 156, 0.937);
+    color: #fff;
+}  
+
+
+@media only screen and (max-width: 768px){
+  .side-image img{
+      margin: 20px 25px;
+      width: 100px;
+  } 
+  .form-outer form .page .otp-field{
+      gap: 5px;
+  }
+  .side-image .logo{
+      position: relative;
+      z-index: 2;
+  }
+  .side-image .cover{
+      position: absolute;
+      top: 0;
+      left: 250px;
+      width: 150px;
+      z-index: 1;
+  }
+  .side-image .text{
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.5);;
+  }
+  .form-outer form .page .paket .card a{
+    width: 120px;
+  }
+}
